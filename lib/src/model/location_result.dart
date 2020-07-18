@@ -10,10 +10,12 @@ class LocationResult {
   /// Latitude/Longitude of the selected location.
   LatLng latLng;
 
-  LocationResult({this.latLng, this.address});
+  Map<String, dynamic> result;
+
+  LocationResult({this.latLng, this.address, this.result});
 
   @override
   String toString() {
-    return 'LocationResult{address: $address, latLng: $latLng}';
+    return 'LocationResult{address: $address, latLng: $latLng, result: $result}';
   }
 }
